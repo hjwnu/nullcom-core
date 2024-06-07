@@ -1,13 +1,15 @@
 package org.nullcom.nullcomcore.util;
 
-import org.springframework.util.StringUtils;
+
+
+import org.apache.commons.lang3.StringUtils;
 
 public class StringUtil extends StringUtils {
-  public String nvl(String str1) {
+  public static String nvl(String str1) {
     return nvl(str1, null);
   }
 
-  public String nvl(String str1, String str2) {
+  public static String nvl(String str1, String str2) {
     if (!isEmpty(str1)) {
       return str1;
     } else if (!isEmpty(str2)) {
@@ -16,8 +18,8 @@ public class StringUtil extends StringUtils {
       return "";
     }
   }
-  
-  public boolean isValueInt(String value) {
+
+  public static boolean isValueInt(String value) {
     try {
       Integer.parseInt(value);
       return true;
@@ -26,7 +28,7 @@ public class StringUtil extends StringUtils {
     }
   }
 
-  public boolean isValueLong(String value) {
+  public static boolean isValueLong(String value) {
     try {
       Long.parseLong(value);
       return true;
@@ -35,7 +37,7 @@ public class StringUtil extends StringUtils {
     }
   }
 
-  public boolean isValueDouble(String value) {
+  public static boolean isValueDouble(String value) {
     try {
       Double.parseDouble(value);
       return true;
@@ -44,7 +46,7 @@ public class StringUtil extends StringUtils {
     }
   }
 
-  public boolean inStr(String val, String... froms) {
+  public static boolean inString(String val, String... froms) {
     boolean rtn = false;
     val = nvl(val);
 

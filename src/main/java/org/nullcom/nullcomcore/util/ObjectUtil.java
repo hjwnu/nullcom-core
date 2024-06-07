@@ -15,6 +15,8 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Stream;
+import org.nullcom.nullcomcore.dto.BasicDto;
+import org.nullcom.nullcomcore.dto.BasicEntity;
 import org.nullcom.nullcomcore.dto.EntityDto;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.BeanWrapper;
@@ -63,11 +65,11 @@ public class ObjectUtil extends ObjectUtils {
     return equalsClass(Boolean.class, cls);
   }
 
-  public static boolean isVo(Object object) {
+  public static boolean isEntity(Object object) {
     return equalsClass(BasicEntity.class, object);
   }
 
-  public static boolean isVo(Class<?> cls) {
+  public static boolean isEntity(Class<?> cls) {
     return equalsClass(BasicEntity.class, cls);
   }
 

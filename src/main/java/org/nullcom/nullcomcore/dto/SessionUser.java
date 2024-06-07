@@ -7,5 +7,7 @@ import lombok.Getter;
 @Getter
 public class SessionUser {
   private String hostId;
+  private String userId;
+  private String personInfoId;
   private String loginId;
 }

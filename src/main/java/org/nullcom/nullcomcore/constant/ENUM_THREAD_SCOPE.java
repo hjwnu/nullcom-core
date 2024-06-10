@@ -1,7 +1,7 @@
 package org.nullcom.nullcomcore.constant;
 
 
-public class CONST_THREAD_SCOPE {
+public class ENUM_THREAD_SCOPE {
 
   public final static String HOST_ID = "HOST_ID";
   public final static String LOGIN_ID = "LOGIN_ID";
